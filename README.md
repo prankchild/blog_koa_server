@@ -9,6 +9,8 @@
 对于该项目 已经写了一个比较详细的例子：在 User 用户模块中已经有写出所需要的几个文件（controller、module、router、middleware、service）、具体可以在文件中查看
 
 文件目录结构
+
+```
 |-- .env // 该系统的默认配置
 |-- .gitignore
 |-- src
@@ -30,3 +32,4 @@
 | | | |-- user.service.ts // 用户服务层
 | |-- utils // 系统所需工具
 | | |-- sequelize.ts // 系统配置 sequelize 信息
+```
