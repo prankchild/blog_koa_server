@@ -7,4 +7,6 @@ const router = new Router({ prefix: "/users" });
 
 router.post("/register", userController.register);
 
+router.post("/findUser", userController.findUser);
+
 export default router;

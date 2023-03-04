@@ -12,7 +12,7 @@ class UserService {
     userRoleCode: number = 0,
     userStatus: number = 1,
     userIntroduce?: string
-  ) {
+  ): Promise<Result> {
     // 判断邮箱是否注册
     if (await UserModule.findOne({ where: { userEmail: userEmail } })) {
       return Result.fail(
@@ -37,6 +37,12 @@ class UserService {
     } else {
       return Result.fail();
     }
+  }
+  async findUser(): Promise<Result> {
+    const whereOpt = {};
+    const attributes = { exclude: ["userPassword", "userSalt"] };
+    const find = await UserModule.findAll({ where: whereOpt, attributes });
+    return Result.success(find);
   }
 }
 

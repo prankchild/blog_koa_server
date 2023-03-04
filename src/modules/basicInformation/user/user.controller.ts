@@ -28,6 +28,10 @@ class UserController {
     // 3.返回结果
     return (ctx.body = result);
   }
+  async findUser(ctx, next) {
+    const result = await userService.findUser();
+    return (ctx.body = result);
+  }
 }
 
 export default UserController;

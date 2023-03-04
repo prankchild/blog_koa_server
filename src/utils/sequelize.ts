@@ -7,6 +7,7 @@ import {
   MYSQL_PWD,
   MYSQL_DB,
 } from "../config";
+
 const sequelize = new Sequelize(
   MYSQL_DB, // 数据库名称
   MYSQL_USER, // 数据库用户名
@@ -23,11 +24,11 @@ const sequelize = new Sequelize(
     logging: true, //日志输
   }
 );
-// sequelize
-//   .authenticate()
-//   .then()
-//   .catch((err) => {
-//     console.error("Unable to connect to the database:", err);
-//   });
+sequelize
+  .authenticate()
+  .then()
+  .catch((err) => {
+    console.error("Unable to connect to the database:", err);
+  });
 
 export default sequelize;

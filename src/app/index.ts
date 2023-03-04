@@ -4,9 +4,10 @@ import KoaBody from "koa-body";
 import * as session from "koa-generic-session";
 import * as redisStore from "koa-redis";
 import * as cors from "koa2-cors";
-
+import * as KoaLogger from "koa-logger";
 import router from "../routes";
 import ErrorHeader from "./error-header";
+import Logger from "../utils/logs/logger.middleware";
 const app = new Koa();
 // const router = new Router();
 
@@ -36,19 +37,17 @@ app.use(
     }),
   })
 );
+// 配置请求日志
+app.use(async (ctx, next) => {
+  await Logger(ctx, next);
+  // console.log(ctx);
+});
 // 配置CORS
 app.use(
   cors({
     origin: function (ctx) {
       return ctx.get("Origin") || "*";
     },
-    // origin: function (ctx) {
-    //   //设置允许来自指定域名请求
-    //   if (ctx.url === '/') {
-    //     return '*' // 允许来自所有域名请求
-    //   }
-    //   return 'http://127.0.0.1:5173' //只允许http://localhost:8080这个域名的请求
-    // },
     maxAge: 5, //指定本次预检请求的有效期，单位为秒。
     credentials: true, //是否允许发送Cookie
     allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], //设置所允许的HTTP请求方法'

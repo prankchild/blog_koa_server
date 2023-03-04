@@ -1,5 +1,13 @@
 import app from "./app";
 import { PORT } from "./config";
-app.listen(PORT, () => {
-  console.log(`server is running on http://127.0.0.1:${PORT}`);
-});
+import { Logger } from "./utils/logs/log4j.util";
+import Chalk from "chalk";
+
+app.listen(PORT);
+
+Logger.log(
+  "\n",
+  Chalk.green(`Koa-Server 服务启动成功 `),
+  `http://localhost:${PORT}/`,
+  "\n"
+);
