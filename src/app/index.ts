@@ -7,7 +7,7 @@ import * as cors from "koa2-cors";
 import * as KoaLogger from "koa-logger";
 import router from "../routes";
 import ErrorHeader from "./error-header";
-import Logger from "../utils/logs/logger.middleware";
+import Console_Logger from "../utils/logs/logger.middleware";
 const app = new Koa();
 // const router = new Router();
 
@@ -38,10 +38,9 @@ app.use(
   })
 );
 // 配置请求日志
-app.use(async (ctx, next) => {
-  await Logger(ctx, next);
-  // console.log(ctx);
-});
+app.use(Console_Logger);
+// 配置日志文件
+// app.use(KoaLog4());
 // 配置CORS
 app.use(
   cors({

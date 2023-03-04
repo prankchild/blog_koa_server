@@ -1,6 +1,6 @@
 import app from "./app";
 import { PORT } from "./config";
-import { Logger } from "./utils/logs/log4j.util";
+import { Logger } from "./utils/logs/log4js.util";
 import Chalk from "chalk";
 
 app.listen(PORT);

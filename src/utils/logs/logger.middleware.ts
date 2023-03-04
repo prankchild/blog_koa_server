@@ -1,4 +1,4 @@
-import { Logger } from "./log4j.util";
+import { Logger } from "./log4js.util";
 
 const logger = async (ctx, next) => {
   const startTime: any = new Date();
