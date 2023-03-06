@@ -15,6 +15,8 @@
     "stop": "npx pm2 stop ecosystem.config.js"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/sequelize": "^4.28.14",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
@@ -28,6 +30,7 @@
     "koa-router": "^7.4.0",
     "koa-yield-breakpoint": "^2.1.0",
     "koa2-cors": "^2.0.6",
+    "loadsh": "^0.0.4",
     "log4js": "^6.8.0",
     "mysql2": "^3.2.0",
     "sequelize": "^6.29.0",
@@ -42,6 +45,6 @@
     "pm2": "^3.5.0",
     "ts-node": "^8.1.0",
     "tsconfig-paths": "^3.8.0",
-    "typescript": "^3.4.5"
+    "typescript": "^4.9.5"
   }
 }

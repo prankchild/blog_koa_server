@@ -1,12 +1,12 @@
 import { Sequelize } from "sequelize";
-
+import { connect } from "./connect";
 import {
   MYSQL_HOST,
   MYSQL_PORT,
   MYSQL_USER,
   MYSQL_PWD,
   MYSQL_DB,
-} from "../config";
+} from "../../config";
 
 const sequelize = new Sequelize(
   MYSQL_DB, // 数据库名称
@@ -24,11 +24,7 @@ const sequelize = new Sequelize(
     logging: true, //日志输
   }
 );
-sequelize
-  .authenticate()
-  .then()
-  .catch((err) => {
-    console.error("Unable to connect to the database:", err);
-  });
+// 数据表之间的连接
+connect(sequelize);
 
 export default sequelize;

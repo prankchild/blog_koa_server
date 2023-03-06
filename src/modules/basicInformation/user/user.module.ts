@@ -1,5 +1,5 @@
 const { DataTypes } = require("sequelize");
-import sequelize from "../../../utils/sequelize";
+import sequelize from "src/utils/sequelize/index";
 import { DEFAULT_AVATAR } from "../../../config";
 // 创建模型
 // defaultValue 默认值 allowNull是否为空 unique是否唯一

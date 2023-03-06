@@ -1,0 +1,21 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>node_modules\r\ndist\r\nyarn.lock\r\npackage.json.lock
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision d157e7b88a8e3ac0419120595559657b8caacbcb)
++++ b/.gitignore	(date 1677937629960)
+@@ -1,4 +1,7 @@
+ node_modules
+ dist
+ yarn.lock
+-package.json.lock
+\ No newline at end of file
++package.json.lock
++logs
++.env
++logs
+\ No newline at end of file
