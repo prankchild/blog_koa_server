@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a79a0aa0-792d-4760-baf4-c391b65ea82c" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/error-code.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/error-code.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/error-header.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/error-header.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/error-message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/error-message.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/basicInformation/user/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/basicInformation/user/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/basicInformation/user/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/basicInformation/user/user.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/sequelize.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +70,7 @@
       <workItem from="1677936700251" duration="213000" />
       <workItem from="1677936975521" duration="97000" />
       <workItem from="1677937083149" duration="645000" />
-      <workItem from="1678111293815" duration="17000" />
+      <workItem from="1678111293815" duration="206000" />
     </task>
     <servers />
   </component>
